@@ -122,15 +122,13 @@ To get a local copy up and running follow these steps.
 - A code editor or IDE of your choice
 
 1. Clone the project repository using the following command:
-
    ```sh
    git clone https://github.com/majinbrum/react-template-form.git
    ```
-
 2. Navigate to the project directory and install the dependencies using npm:
    ```sh
    cd react-template-form
-    npm install
+   npm install
    ```
 3. Start the development server using Vite:
    ```sh
