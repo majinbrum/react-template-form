@@ -1,0 +1,74 @@
+.formContainer {
+	background-color: var(--neutralLight);
+	width: 100%;
+	max-width: 600px;
+	padding: 2rem;
+	border-radius: 1rem;
+
+	display: flex;
+	flex-direction: column;
+	row-gap: 2rem;
+}
+
+.nameBox {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	gap: 1rem;
+}
+
+@media (min-width: 768px) {
+	.nameBox {
+		flex-direction: row;
+	}
+}
+
+.infoBox {
+	width: 100%;
+
+	display: flex;
+	flex-direction: column;
+	row-gap: 1rem;
+}
+
+.infoLabel {
+	color: var(--neutralDark);
+}
+
+.infoInput {
+	border: 1px solid var(--neutralMedium);
+	border-radius: 0.5rem;
+	padding: 1rem;
+
+	font-family: "Karla Bold";
+	color: var(--neutralDark);
+	font-size: 18px;
+}
+
+textarea.infoInput {
+	width: 100%;
+	resize: vertical;
+}
+
+.infoInput:focus,
+.infoInput:focus-visible {
+	outline: 2px solid var(--primaryMedium);
+}
+
+.generateBtn {
+	border: none;
+	border-radius: 0.5rem;
+	background-color: var(--primaryMedium);
+	padding: 1rem 0;
+
+	color: var(--neutralLight);
+	font-family: "Karla Bold";
+	font-size: 16px;
+
+	cursor: pointer;
+}
+
+.generateBtn[disabled] {
+	background-color: var(--neutralDark);
+	opacity: 0.5;
+}
